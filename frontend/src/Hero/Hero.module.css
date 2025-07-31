@@ -1,0 +1,149 @@
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+  /* padding: 3rem 0;
+  position: relative;
+  overflow: hidden; */
+}
+
+.hero > *:last-child {
+    margin-top: 2rem;
+}
+
+.title {
+  color: white;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 6rem;
+  -webkit-text-stroke: 0px transparent;
+  /* animation: fillText 0.8s ease-in-out forwards; */
+  /* animation-delay: 0.5s; */
+  
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  cursor: default;
+}
+
+.title:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+/* @keyframes fillText {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 6rem;
+  }
+  100% {
+    color: white;
+    -webkit-text-stroke: 0px transparent;
+    font-size: 5rem;
+  }
+} */
+
+.subtitle {
+  color: white;
+  font-family: "Segoe UI";
+}
+
+.triangleLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 30vh solid white;
+  border-right: 50vw solid transparent;
+  z-index: 1;
+}
+
+.triangleRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 30vh solid white;
+  border-left: 50vw solid transparent;
+  z-index: 1;
+}
+
+/* Floating lines animation */
+.floatingLinesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.floatingLine {
+  position: absolute;
+  height: 2px;
+  opacity: 0;
+  animation: floatUp 3s infinite linear;
+}
+
+.floatingLineLeft {
+  transform-origin: left bottom;
+  transform: rotate(16deg); /* Angle matching left triangle */
+  left: 0;
+  width: 51.5vw;
+  background: linear-gradient(90deg, white, transparent);
+}
+
+.floatingLineRight {
+  transform-origin: right bottom;
+  transform: rotate(-16deg); /* Angle matching right triangle */
+  right: 0;
+  width: 51.5vw;
+  background: linear-gradient(-90deg, white, transparent);
+}
+
+.floatingLine:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.floatingLine:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.floatingLine:nth-child(4) {
+  animation-delay: 0s;
+}
+
+.floatingLine:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.floatingLine:nth-child(6) {
+  animation-delay: 2s;
+}
+
+@keyframes floatUp {
+  0% {
+    bottom: 30vh;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    bottom: 40vh;
+    opacity: 0;
+  }
+}
+/* 
+.content {
+  position: relative;
+  z-index: 2;
+} */

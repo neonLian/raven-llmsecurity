@@ -1,0 +1,13 @@
+.footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
+  margin-top: auto;
+  backdrop-filter: blur(10px);
+}
+
+.footerText {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Segoe UI";
+  font-size: 0.875rem;
+}
