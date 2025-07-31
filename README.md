@@ -1,5 +1,7 @@
-# raven-llmsecurity
-Automated AI red teamer for LLM prompt injection, information leakage, and content policy bypassing
+# RAVEN
+*Red-teaming AI Validation & Exploitation Network*
+
+RAVEN is an automated AI red teamer that tests attacks for LLM prompt injection, information leakage, and content policy bypassing.
 
 ## Setup
 
